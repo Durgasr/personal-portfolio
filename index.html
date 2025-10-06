@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="/style.css" />
+    <!-- <script src="https://kit.fontawesome.com/76ac741035.js" crossorigin="anonymous"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <p><span>D</span>urga<span>S</span>ri</p>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Engineer</p>
+          <h1>
+            Hi, I'm <span>Durgasri</span> <br />
+            From India
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------ABOUT----------------------- -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/Durgasri.jpeg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Passionate Software Engineer with 2.5 years of experience in
+              developing web applications and backend systems. Skilled at
+              writing clear, concise code that is easy to maintain and
+              troubleshoot. Experienced in working with both small and large
+              projects. Able to work independently of remote locations or in
+              office environments as needed by the company
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <p>Frontend Technologies</p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+                <li>Angular</li>
+              </ul>
+              <p>Backend Technologies</p>
+              <ul>
+                <li>Node JS</li>
+                <li>Express JS</li>
+              </ul>
+              <p>Databasese</p>
+              <ul>
+                <li>Mysql</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Apr 2022 - Oct 2023</span> <br />Software Engineer at
+                  Probe Information Services Pvt Ltd
+                </li>
+                <li>
+                  <span>Aug 2021 - Apr 2022</span> <br />Full Stack Web
+                  Development Trainee at Nxtwave
+                </li>
+                <li>
+                  <span>Jun 2021 - Aug 2021</span> <br />Web Development
+                  Internship at Verzeo
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2021</span> <br />B.Tech from JNTUK</li>
+                <li><span>2017</span> <br />Intermediate From NRI Tenali</li>
+                <li><span>2015</span> <br />SSC From V.Z.P.High School</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------PORTFOLIO----------------------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="/images/work1.jpg" />
+            <div class="layer">
+              <h3>Food Munch Website</h3>
+              <p>
+                This is online food order application, it shows the food menu
+                which are available
+              </p>
+              <a href="https://durgasrifood.ccbp.tech/"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/images/work9.jpg" class="wiki-image" />
+            <div class="layer">
+              <h3>Wikipedia Search Application</h3>
+              <p>
+                This is the application where can search keyword, it shows
+                appropriate results, when click on any result it will open in
+                another tab
+              </p>
+              <a href="https://durgasriwikiapp.ccbp.tech/ "
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/images/work4.jpg" />
+            <div class="layer">
+              <h3>Jobby App</h3>
+              <p>
+                This is the application for job seekers, where search for jobs,
+                can use filters to filter the results
+              </p>
+              <a href="https://durgasrijobyapp.ccbp.tech/"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <button class="btn">See More</button>
+      </div>
+    </div>
+    <!------------Contact----------------->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              challadurgasri2000@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i> 8121984332</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/durgasri/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Durgasr"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.instagram.com/durgasri_1520/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <a
+              href="/images/Durgasri_challa_resume.pdf"
+              download
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Created By <span>Durgasri Challa</span> | &copy; 2024 All rights
+          reserved
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tabLinks = document.getElementsByClassName("tab-links");
+      var tabContents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("active-link");
+        }
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+        console.log(tabname);
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sideMenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sideMenu.style.right = "0";
+      }
+      function closemenu() {
+        sideMenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxphC5GZRcut8sqHWf0ry5_3LLTCKXPEeo26OMSvvL9TATi2-A3I6EWnIHSvDowzLrJ/exec"; // Replace with deployed web app URL
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(() => (msg.innerHTML = ""), 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
