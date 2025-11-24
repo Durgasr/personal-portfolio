@@ -23,18 +23,19 @@
           <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#projects">projects</a></li>
             <li><a href="#contact">Contact</a></li>
             <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
           </ul>
           <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-          <p>Software Engineer</p>
-          <h1>
-            Hi, I'm <span>Durgasri</span> <br />
-            From India
-          </h1>
+          <p>Hello,</p>
+          <h1>I'm <span>Durgasri Challa</span> <br /></h1>
+          <h2>Software Engineer</h2>
+          <button class="btn btn2">
+            <a href="#about">Know more about me</a>
+          </button>
         </div>
       </div>
     </div>
@@ -50,8 +51,8 @@
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
             <p>
-              Passionate Software Engineer with 2.5 years of experience in
-              developing web applications and backend systems. Skilled at
+              Passionate Software Engineer with 2.5 years of relevant experience
+              in developing web applications and backend systems. Skilled at
               writing clear, concise code that is easy to maintain and
               troubleshoot. Experienced in working with both small and large
               projects. Able to work independently of remote locations or in
@@ -73,6 +74,7 @@
                 <li>CSS</li>
                 <li>Bootstrap</li>
                 <li>JavaScript</li>
+                <li>React</li>
                 <li>Angular</li>
               </ul>
               <p>Backend Technologies</p>
@@ -114,21 +116,21 @@
       </div>
     </div>
 
-    <!-- ----------------PORTFOLIO----------------------- -->
+    <!-- ----------------projects----------------------- -->
 
-    <div id="portfolio">
+    <div id="projects">
       <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
           <div class="work">
-            <img src="/images/work1.jpg" />
+            <img src="/images/jobyc2.jpg" />
             <div class="layer">
-              <h3>Food Munch Website</h3>
+              <h3>Jobyc | Careers</h3>
               <p>
-                This is online food order application, it shows the food menu
-                which are available
+                This is job portal where job seekers can apply available jobs
+                and recruiter can post jobs, view applicants, applicants details
               </p>
-              <a href="https://durgasrifood.ccbp.tech/"
+              <a href="https://jobyccareers.netlify.app/"
                 ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
@@ -142,26 +144,26 @@
                 appropriate results, when click on any result it will open in
                 another tab
               </p>
-              <a href="https://durgasriwikiapp.ccbp.tech/ "
+              <a href="https://durgawikipediap.ccbp.tech" target="_blank"
                 ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
           </div>
           <div class="work">
-            <img src="/images/work4.jpg" />
+            <img src="/images/browsesr-history.jpg" />
             <div class="layer">
-              <h3>Jobby App</h3>
+              <h3>Browser History</h3>
               <p>
-                This is the application for job seekers, where search for jobs,
-                can use filters to filter the results
+                This is an browser history application, stores the history use
+                can and search the history or delete
               </p>
-              <a href="https://durgasrijobyapp.ccbp.tech/"
+              <a href="https://durgasrijobyapp.ccbp.tech/" target="_blank"
                 ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
           </div>
         </div>
-        <button class="btn">See More</button>
+        <!-- <button class="btn">See More</button> -->
       </div>
     </div>
     <!------------Contact----------------->
@@ -182,9 +184,6 @@
               ></a>
               <a href="https://github.com/Durgasr"
                 ><i class="fa-brands fa-github"></i
-              ></a>
-              <a href="https://www.instagram.com/durgasri_1520/"
-                ><i class="fa-brands fa-instagram"></i
               ></a>
             </div>
             <a
@@ -214,12 +213,11 @@
           </div>
         </div>
       </div>
-      <div class="copyright">
+      <!-- <div class="copyright">
         <p>
-          Created By <span>Durgasri Challa</span> | &copy; 2024 All rights
-          reserved
+          Created By <span>Durgasri Challa</span> | 2024 
         </p>
-      </div>
+      </div> -->
     </div>
 
     <script>
@@ -250,22 +248,6 @@
       }
     </script>
 
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbxphC5GZRcut8sqHWf0ry5_3LLTCKXPEeo26OMSvvL9TATi2-A3I6EWnIHSvDowzLrJ/exec"; // Replace with deployed web app URL
-      const form = document.forms["submit-to-google-sheet"];
-      const msg = document.getElementById("msg");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            msg.innerHTML = "Message sent successfully";
-            setTimeout(() => (msg.innerHTML = ""), 5000);
-            form.reset();
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
+    
   </body>
 </html>
